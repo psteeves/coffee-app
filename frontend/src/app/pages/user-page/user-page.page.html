@@ -10,7 +10,7 @@
 <ion-content *ngIf="auth.token">
   <ion-button (click)="auth.logout()">Log Out</ion-button>
       <ion-item>
-        <ion-label>Active JWT</ion-label>
-        <ion-textarea [ngModel]="auth.token" name="Active JWT"></ion-textarea>
+        <ion-label>Username:</ion-label>
+        <ion-textarea [ngModel]="auth.payload['https://hack-collective.com/email']" name="Username"></ion-textarea>
       </ion-item>
 </ion-content>
